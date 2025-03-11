@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuan's HTML</title>
+  <link rel="shortcut icon" href="./images/icon.gif">
+</head>
+<body style="background-color: rgb(247, 247, 238);">
+  <h1 style="text-align: center;">HEAD 1</h1>
+  <h1 style="font-family:Arial, Helvetica, sans-serif;color: #92deff;;">HEAD 2</h1>
+  <h2>HEAD 3</h2>
+  
+  <p>Paragraph 1</p>
+  <p style="color: #81e199;">Paragraph 2</p>
+
+  <hr />
+  
+  <a href="https://yuan.sn.cn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     title="My Alist">
+    Link
+  </a>
+  
+  <br />
+  
+  <img src="./images/610UOC8xZpL._AC_UY1000_.jpg" 
+       alt="头像图片" 
+       width="128" 
+       height="128" />
+
+  <!-- 文本格式化标签 -->
+  <p>
+    <strong>重要文本</strong><br />
+    <em>强调文本</em><br />
+    <small>小号文本</small><br />
+    <del>删除
+      <img src="./images/favicon.ico", alt="测试icon", align="top", width="32", height="32">
+    字符</del><br />
+    <code>console.log("Hello")</code>
+  </p>
+
+  <!-- 表格 -->
+  <table border="4">
+    <thead>
+      <tr>
+        <th>列标题1</th>
+        <th>列标题2</th>
+        <th>列标题3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>行1</td>
+        <td>行1</td>
+        <td>行1</td>
+      </tr>
+      <tr>
+        <td>行2</td>
+        <td>行2</td>
+        <td>行2</td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- 列表 -->
+ <p>无序列表</p>
+ <ul>
+  <li>Cofffee</li>
+  <li>Milk</li>
+ </ul>
+ <p>有序列表</p>
+ <ol>
+  <li>Coffee</li>
+  <li>Milk</li>
+</ol>
+<p>自定义列表</p>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- White cold drink</dd>
+</dl>
+<table border="4">
+  <thead>
+    <tr>
+      <th>标签</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>定义有序序列</td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;</td>
+      <td>定义无序序列</td>
+    </tr>
+    <td>&lt;li&gt;</td>
+    <td>定义标签</td>
+    </tr>
+    <td>&lt;dl&gt;</td>
+    <td>定义列表</td>
+    </tr>
+    <td>&lt;dt&gt;</td>
+    <td>自定义列表项目</td>
+    </tr>
+    <td>&lt;dd&gt;</td>
+    <td>定义自定列表的描述</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 区块 -->
+ <p>这是一些文本,为了演示&lt;div&gt;的效果</p>
+ <div style="color: rgb(78, 212, 212);">
+  <h3>这是在&lt;div&gt;中的标题</h3>
+  <p>这是在&lt;div&gt;中的文本</p>
+  <p>&lt;div&gt;本身没有任何含义,只是用来组合其他HTML的容器,它使块级元素</p>
+  <span style="color: rgb(255, 196, 124);"><p>这是定义在内联元素&lt;span&gt;中的文本</p></span>
+ </div>
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+
+<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+<b>菜单</b><br>
+HTML<br>
+CSS<br>
+JavaScript</div>
+
+<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+内容在这里</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+版权 © runoob.com</div>
+
+</div>
+  <script src="index.js"></script>
+</body>
+<hr />
+<!-- 表单和输入 -->
+
+ <form action="/" method="post">
+  <!--文本输入框-->
+  <label for="name">用户名</label>
+  <input type="text" id="name" name="name" required>
+
+  <br>
+
+  <!--密码输入框-->
+  <label for="password">密码 </label>
+  <input type="password" id="password" name="password" required>
+
+  <br>
+
+  <!--复选框-->
+  <input type="checkbox" id="subscribe" name="subscribe" checked>
+  <label for="subscribe">订阅推送信息</label><br>
+  <input type="checkbox" id="subscribe_email" name="123" checked>
+  <label for="subscribe_email">邮箱订阅</label>
+
+  <br>
+
+  <!--单选按钮-->
+  <input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">男</label>
+  <input type="radio" id="female" name="gender" value="female" checked>
+  <label fot="female">女</label>
+  <br>
+  
+  <!--下拉列表-->
+  <label for="country">国家</label>
+  <select id="country" name="country">
+    <option value="cn">CN</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+  </select>
+
+  <br>
+
+  <!--提交按钮-->
+  <input type="submit" value="提交">
+  </form>
+
+<!--框架-->
+<iframe src="https://yuan.sn.cn" width="800" height="400"></iframe>
+<br>
+
+<!--脚本-->
+<script>
+  document.write("Hello World!")
+</script> 
+</html>
