@@ -5,6 +5,7 @@
 * 1983年TCP/IP成为ARPANET上的标准协议，使所有TCP/IP协议的计算机都能利用互联网相互通信，因此称为“互联网元年”
 * 1985年建成三级结构的互联网，分为主干网 地区网 校园网
 * 1993年商业互联网占据主流，ISP(Internet Service Provider)出现
+
 ### 端口
 
 * 21:FTP
@@ -24,6 +25,7 @@ CDN边缘服务器主要目的是将内容存储在尽可能靠近发出请求�
 IXP(Internet exchange point) 是一个物理位置，ISP和CDN之类的互联网基础设施通过它相互连接。
 
 ## 协议
+
 为了让不同设备之间进行通信，定义了协议。
 在基本的TCP/IP网络体系中，协议有：
 * IP
@@ -34,12 +36,13 @@ IXP(Internet exchange point) 是一个物理位置，ISP和CDN之类的互联网
 * TELNET
 * SNMP
 * SMTP
+
 在数据的传输过程中，常用分组交换协议。分组交换协议指的就是将大数据分割成一个个包(Packet), 以较小的单位进行传输。
 ![Packet](./images/Packet.png)
 
 ## OSI(Open System Interconnetction)模型
 ![OSI](./images/OSI.gif)
-OSI模型按照结构分为七层, 自下而上分别为:
+OSI模型按照结构分为七层, 每个分层都接受它下一层提供的特殊服务，并且负责为自己的上一层提供特定的服务。分层有利于模块化开发，每层都能够独立使用。
 * 物理层(Physical Layer)
     * 激活、维持、关闭通信端点之间的机械特性、电子特性、功能特性以及过程特性。
     * 该层为上层协议提供了一个传输数据的可靠物理媒体。（中继器 集线器）
@@ -53,13 +56,13 @@ OSI模型按照结构分为七层, 自下而上分别为:
         1. 基本的数据单位为帧(frame)
         1. 主要的协议：以太网协议
         1. 重要的设备：网桥和交换机
-    
-* 网络层(Nerwork Layer)
+
+* 网络层(Network Layer)
     * 路径选择、路由及其逻辑寻址
     * 基本数据单位为IP数据包
     * 包含的协议：
         1. IP协议(Internet Protocol)
-        1. ICMP协议(Internrt Control Message Protocol, 因特网控制报文协议)
+        1. ICMP协议(Internet Control Message Protocol, 因特网控制报文协议)
         1. ARP(Address Resolution Protocol, 地址解析协议)
         1. RARP协议(Reverse Address Resolution Protocol, 逆地址解析协议)
     * 重要的设备: 路由器
@@ -69,13 +72,15 @@ OSI模型按照结构分为七层, 自下而上分别为:
     * 包含的主要协议：TCP协议（Transmission Control Protocol，传输控制协议）、UDP协议（User Datagram Protocol，用户数据报协议）
     * 重要设备：网关
 
-* 会话层
+* 会话层(Session Layer)
     * 管理主机之间的会话进程，负责建立，管理，终止进程之间的会话
     * 插入校验点来实现数据同步
 
-* 表示层
+* 表示层(Presentation Layer)
     * 对上层数据或信息进行变换以保证主机应用层可以被另一个主机的应用程序理解。
 
-* 应用层
+* 应用层(Application Layer)
     * 为操作系统或网络应用程序提供网络服务的接口
+
+
 
