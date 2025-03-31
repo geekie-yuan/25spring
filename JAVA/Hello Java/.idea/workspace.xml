@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c003ce55-d07b-4512-ad30-0b8612faf64b" name="Changes" comment="" />
+    <list default="true" id="c003ce55-d07b-4512-ad30-0b8612faf64b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ICT/HomeWork.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ICT/HomeWork.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../操作系统/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../操作系统/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +31,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/YuanS/Documents/25Spring/JAVA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +58,7 @@
       <updated>1740972190863</updated>
       <workItem from="1740972191922" duration="968000" />
       <workItem from="1741565920413" duration="1103000" />
+      <workItem from="1742171182470" duration="271000" />
     </task>
     <servers />
   </component>
